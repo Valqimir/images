@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>déranger pt. 2 (instrumental)  |  edess</title>
+  <title>Modern MP3 Player</title>
   <style>
     body {
       background-color: #1a1a1a;
@@ -12,6 +12,25 @@
       text-align: center;
       margin: 0;
       padding: 0;
+    }
+
+    #player-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
+    }
+
+    #song-info {
+      margin-bottom: 10px;
+    }
+
+    #album-art {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 20px;
     }
 
     audio {
@@ -48,10 +67,22 @@
 </head>
 <body>
 
-<audio id="audioPlayer" controls>
-  <source src="https://watch.valqimir.com/music/deranger2-instru.mp3" type="audio/mp3">
-  fichier non supporté
-</audio>
+<div id="player-container">
+  <div id="album-art">
+    <!-- Replace 'your-image-path.jpg' with the actual path to your album art -->
+    <img src="your-image-path.jpg" alt="Album Art">
+  </div>
+
+  <div id="song-info">
+    <!-- Replace 'Song Title' with the actual title of your song -->
+    <h2>Song Title</h2>
+  </div>
+
+  <audio id="audioPlayer" controls>
+    <source src="your-audio-file.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+</div>
 
 </body>
 </html>
